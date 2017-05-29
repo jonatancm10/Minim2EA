@@ -1,0 +1,27 @@
+<ion-view title="Estudiants" id="page22">
+  <ion-content padding="true" class="has-header">
+    <form id="estudiants-form2" class="list">
+      <label class="item item-input" id="estudiants-input4">
+        <span class="input-label">Nom</span>
+        <input type="text" ng-model="newEstudiant.nom" placeholder="">
+      </label>
+      <label class="item item-input" id="estudiants-input5">
+        <span class="input-label">Titulacio</span>
+        <input type="text" ng-model="newEstudiant.titulacio" placeholder="">
+      </label>
+      <label class="item item-input" id="estudiants-input5">
+        <span class="input-label">Direcció</span>
+        <input type="text" ng-model="newEstudiant.direccio" placeholder="">
+      </label>
+      <label class="item item-input" id="estudiants-input6">
+        <span class="input-label">Teléfon casa</span>
+        <input type="text" ng-model="newEstudiant.telefons.casa" placeholder="">
+      </label>
+      <label class="item item-input" id="estudiants-input7">
+        <span class="input-label">Teléfon feina</span>
+        <input type="text" ng-model="newEstudiant.telefons.feina" placeholder="">
+      </label>
+    </form>
+    <button id="estudiants-button2" style="background-color: #5cb85c" class="button button-positive  button-block" ng-click="registrarPersona()" >Registrar</button>
+  </ion-content>
+</ion-view>

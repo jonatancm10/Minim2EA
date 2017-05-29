@@ -1,0 +1,18 @@
+<ion-view title="Estudiants" id="page2">
+  <ion-content padding="true" class="has-header">
+    <h4>Clica a un estudiant per modificar i veure les seves dades</h4>
+      <ion-list id="Estudiant-list2">
+        <ion-item class="item-divider"id="estudiant-list-item-divider2">LListat d'alumnes</ion-item>
+          <ion-item class="item-thumbnail-left item-icon-right" ng-repeat="estudiant in estudiants"  href="/#/side-menu21/page4/{{estudiant._id}}" ng-click = "searchBook(book)">
+            <img src="./img/estudiantPicture.png">
+            <h2> {{estudiant.nom}}</h2>
+            <p>Titulacio: {{estudiant.titulacio}}</p>
+            <p> {{estudiant.telefons.feina}} // {{estudiant.telefons.casa}}</p>
+            <p>Direccio: {{estudiant.direccio}}</p>
+            <i class="icon ion-close-round " ng-click="deleteEstudiant(estudiant._id)"></i>
+          </ion-item>
+        </ion-list>
+    <button id="estudiants-list2" class="button button-positive  button-block" ui-sref="menu.addestudiants" >REGISTRAR ESTUDIANT</button>
+    <button id="estudiants-button2" class="button button-balanced  button-block" ui-sref="menu.filtr2" >Filtrar</button>
+  </ion-content>
+</ion-view>
